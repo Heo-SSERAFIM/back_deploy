@@ -31,7 +31,8 @@ SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", ".cloudtype.app"]
+CSRF_TRUSTED_ORIGINS = ['https://*.cloudtype.app']
 
 
 # Application definition
@@ -146,5 +147,3 @@ CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
 
 SECURE_CROSS_ORIGIN_OPENER_POLICY = None
-CSRF_TRUSTED_ORIGINS = ['https://port-0-back-deploy-eu1k2lllf8s0bx.sel3.cloudtype.app/']
-CSRF_COOKIE_SECURE=False
